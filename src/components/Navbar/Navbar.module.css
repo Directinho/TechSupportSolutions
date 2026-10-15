@@ -1,0 +1,43 @@
+.Navbar {
+  display: flex;
+  height: 100px;
+  margin: auto;
+  width: 100%;
+  background-color: var(--azul-b);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Titulo {
+  font-family: var(--fonte-titulo);
+  color: white;
+  font-size: 35px;
+  margin: 0;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.Create {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in;
+}
+.Create:hover {
+  transform: translateY(-50%) scale(1.1);
+}

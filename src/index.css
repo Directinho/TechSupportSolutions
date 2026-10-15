@@ -1,0 +1,15 @@
+:root {
+  --roxo-b: #3E0F8D;
+  --amarelo-b: #E4DA72;
+  --vermelho-b: #dc2626;
+  --verde-b: #84cc16;
+  --cinza-b: #71717a;
+  --laranja-b: #ea580c;
+  --azul-b: #2563eb;
+  --fonte-titulo: "Average Sans", sans-serif;
+  --fonte-peso: 400px;
+  --fonte-texto: "Mukta Malar", sans-serif;
+  --fundo-gradiente-inicio: #6E96E5;
+  --fundo-gradiente-final: #426EDB;
+
+}

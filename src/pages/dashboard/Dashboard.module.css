@@ -1,0 +1,5 @@
+body {
+    background-image: linear-gradient(to bottom, var(--fundo-gradiente-inicio), var(--fundo-gradiente-final));
+    background-repeat: no-repeat;
+    background-color: var(--fundo-gradiente-final);
+}

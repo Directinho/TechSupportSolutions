@@ -1,0 +1,64 @@
+.Principal {
+  text-align: center;
+  flex: flex;
+}
+
+.icaixa {
+  height: 40px;
+  width: 40px;
+  transform: translateY(16px);
+}
+
+.icaixa:hover {
+  content: url("https://i.imgur.com/zY0QLNe.gif");
+}
+
+.Entrada {
+  height: 24px;
+  border-radius: 10px;
+  border: solid gray;
+  height: 32px;
+  width: 240px;
+  text-align: center;
+}
+
+.Icone {
+  height: 40px;
+  width: 40px;
+  transform: translateY(12px);
+}
+
+.Radio {
+  height: 200px;
+  width: 200px;
+}
+
+.alta {
+  color: var(--vermelho-b);
+  font-weight: bold;
+  font-family: var(--fonte-texto);
+}
+
+.Media {
+  color: var(--amarelo-b);
+  font-weight: bold;
+  font-family: var(--fonte-texto);
+}
+
+.baixa {
+  color: var(--verde-b);
+  font-weight: bold;
+  font-family: var(--fonte-texto);
+}
+
+.descricaos {
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+  color: var(--azul-b);
+}
+
+textarea {
+  border: solid gray;
+  width: 400px;
+  height: 80px;
+}

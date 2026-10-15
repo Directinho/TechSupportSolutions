@@ -1,0 +1,39 @@
+.Principal {
+  display: flex;
+  background-color: #3e0f8d;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.Titulo {
+  font-family: var(--fonte-titulo);
+}
+
+.Descricao {
+  font-family: var(--fonte-texto);
+}
+
+.categoria {
+  font-family: var(--fonte-texto);
+}
+
+.Status_Valor {
+  color: var(--laranja-b);
+  font-weight: bold;
+  font-family: var(--fonte-texto);
+}
+
+.Prioridade {
+  font-family: var(--fonte-texto);
+}
+
+.Prioridade_Circulo {
+  height: 64px;
+  width: 64px;
+  box-shadow: 3px solid;
+  margin: auto;
+  background-color: var(--amarelo-b);
+  border-radius: 150px;
+}
