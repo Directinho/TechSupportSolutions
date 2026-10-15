@@ -1,11 +1,20 @@
 .fundo {
-  background-image: linear-gradient(to bottom, var(--fundo-gradiente-inicio), var(--fundo-gradiente-final));
+  background-image: linear-gradient(
+    to bottom,
+    var(--fundo-gradiente-inicio),
+    var(--fundo-gradiente-final)
+  );
   background-repeat: no-repeat;
-  background-color: var(--fundo-gradiente-final);  display: flex;
+  background-color: var(--fundo-gradiente-final);
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
+  min-height: 100vh;
+  font-family: var(--fonte-titulo);
+  font-weight: bold;
+  color: white;
 }
 
 .container {
@@ -29,6 +38,7 @@
 .formulario {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.25rem;
   font-family: var(--font-texto);
   font-size: 1.2rem;
@@ -38,45 +48,63 @@
   padding: 2.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-input {
-  height: 24px;
-  border-radius: 10px;
-  border: solid gray;
-  height: 32px;
-  width: 240px;
-  text-align: center;
-  font-family: var(--font-texto);
-  font-size: 1.2rem;
-  font-weight: 500;
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  gap: 0.4rem;
 }
-textarea {
-  height: 24px;
-  border-radius: 10px;
-  border: solid gray;
-  height: 32px;
-  width: 240px;
+
+.campo label {
   text-align: center;
-  font-family: var(--font-texto);
-  font-size: 1.2rem;
+  width: 100%;
+  font-weight: 600;
 }
+
+input,
+textarea,
 select {
-  height: 24px;
   border-radius: 10px;
-  border: solid gray;
-  height: 32px;
-  width: 240px;
+  border: 1px solid gray;
+  height: 42px;
+  width: 100%;
+  max-width: 320px;
   text-align: center;
   font-family: var(--font-texto);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
-.botao:hover:not(:disabled) {
-  background: #1d4ed8;
+textarea {
+  height: auto;
+  min-height: 120px;
+  padding: 12px;
+  resize: vertical;
 }
 
-.botao:disabled {
-  background: #94a3b8;
-  cursor: not-allowed;
+input::placeholder,
+textarea::placeholder {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.botao {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
 }
 
 .sucesso {

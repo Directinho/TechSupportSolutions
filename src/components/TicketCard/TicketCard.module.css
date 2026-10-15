@@ -1,10 +1,18 @@
 .Principal {
   display: flex;
   background-color: #3e0f8d;
-  height: 400px;
+  min-height: 400px;
   width: 300px;
   text-align: center;
   color: white;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .Titulo {
@@ -13,9 +21,18 @@
 
 .Descricao {
   font-family: var(--fonte-texto);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.categoria {
+.Categoria {
+  font-family: var(--fonte-texto);
+}
+
+.Status {
   font-family: var(--fonte-texto);
 }
 
@@ -32,8 +49,22 @@
 .Prioridade_Circulo {
   height: 64px;
   width: 64px;
-  box-shadow: 3px solid;
-  margin: auto;
+  margin: 8px auto 0;
   background-color: var(--amarelo-b);
   border-radius: 150px;
+}
+
+.Detalhes {
+  margin-top: auto;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.Detalhes:hover {
+  background: #1d4ed8;
 }

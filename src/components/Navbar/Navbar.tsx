@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import Styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
     <div className={Styles.Navbar}>
-      <a href="/" className={Styles.brand}>
+      <Link to="/" className={Styles.brand}>
         <img
           src="https://i.imgur.com/y0j2vgz.png"
           className={Styles.logo}
@@ -11,15 +12,15 @@ function Navbar() {
         />
 
         <h4 className={Styles.Titulo}>TechSupport Solutions</h4>
-      </a>
+      </Link>
 
-      <a href="/novo" className={Styles.createLink}>
+      <Link to="/novo" className={Styles.createLink}>
         <img
           src="https://i.imgur.com/559iF7u.png"
           className={Styles.Create}
           alt="Criar novo"
         />
-      </a>
+      </Link>
     </div>
   );
 }

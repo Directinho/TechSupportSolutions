@@ -1,5 +1,39 @@
-body {
-    background-image: linear-gradient(to bottom, var(--fundo-gradiente-inicio), var(--fundo-gradiente-final));
-    background-repeat: no-repeat;
-    background-color: var(--fundo-gradiente-final);
+.fundo {
+  background-image: linear-gradient(
+    to bottom,
+    var(--fundo-gradiente-inicio),
+    var(--fundo-gradiente-final)
+  );
+  background-repeat: no-repeat;
+  background-color: var(--fundo-gradiente-final);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info {
+  text-align: center;
+  color: white;
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.erro {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 0.9rem;
+  border-radius: 8px;
+  margin: 1.5rem auto 0;
+  max-width: 600px;
+  text-align: center;
+  font-weight: 500;
 }

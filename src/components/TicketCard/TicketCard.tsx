@@ -1,18 +1,46 @@
-import Styles from './TicketCard.module.css'
+import { Link } from "react-router-dom";
+import Styles from "./TicketCard.module.css";
+import type { Priority, Ticket } from "../../models/Ticket";
 
-function TicketCard(){
-    return(
+interface TicketCardProps {
+  ticket: Ticket;
+}
+
+const priorityColor: Record<Priority, string> = {
+  Baixa: "var(--verde-b)",
+  Média: "var(--amarelo-b)",
+  Alta: "var(--vermelho-b)",
+};
+
+function TicketCard({ ticket }: TicketCardProps) {
+  return (
     <div className={Styles.Principal}>
-        <div className={Styles.Container}>
-            <h2 className={Styles.Titulo}>Teclado</h2>
-            <p className={Styles.Descricao}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet quas inventore impedit, mollitia voluptates aliquid sunt omnis laboriosam aut?</p>
-                <p className={Styles.Categoria}>Categoria: <b>Periféricos</b></p>
-                <p className={Styles.Status}>Status: <span className={Styles.Status_Valor}>Em_andamento</span></p>
-                <div className={Styles.Prioridade}><b className={Styles.Prioridade_Valor}>Prioridade: </b><br /><b className={Styles.Status}><div className={Styles.Prioridade_Circulo}></div> </b>
-                </div>
-              </div>
-    </div>       
-    )
+      <div className={Styles.Container}>
+        <h2 className={Styles.Titulo}>{ticket.title}</h2>
+        <p className={Styles.Descricao}>{ticket.description}</p>
+        <p className={Styles.Categoria}>
+          Categoria: <b>{ticket.category}</b>
+        </p>
+        <p className={Styles.Status}>
+          Status:{" "}
+          <span className={Styles.Status_Valor}>
+            {ticket.status.replace("_", " ")}
+          </span>
+        </p>
+        <div className={Styles.Prioridade}>
+          <b>Prioridade: {ticket.priority}</b>
+          <div
+            className={Styles.Prioridade_Circulo}
+            style={{ backgroundColor: priorityColor[ticket.priority] }}
+          />
+        </div>
+
+        <Link to={`/chamados/${ticket.id}`} className={Styles.Detalhes}>
+          Ver detalhes
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default TicketCard;
