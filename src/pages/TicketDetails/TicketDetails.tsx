@@ -1,13 +1,11 @@
-import Styles from './TicketDetails.module.css'
+import Styles from "./TicketDetails.module.css";
 
 function TicketDetails() {
-    return (
-        <>
-            <div className={Styles.fundo}>
-
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className={Styles.fundo}></div>
+    </>
+  );
 }
 
-export default TicketDetails
+export default TicketDetails;

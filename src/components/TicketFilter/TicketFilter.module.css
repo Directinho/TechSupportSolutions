@@ -28,11 +28,6 @@
   transform: translateY(12px);
 }
 
-.Radio {
-  height: 200px;
-  width: 200px;
-}
-
 .alta {
   color: var(--vermelho-b);
   font-weight: bold;
@@ -55,6 +50,7 @@
   font-family: var(--fonte-texto);
   font-weight: bold;
   color: var(--azul-b);
+  height: 400px;
 }
 
 textarea {

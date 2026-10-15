@@ -1,14 +1,23 @@
 .Navbar {
+  position: relative;
   display: flex;
   height: 100px;
-  margin: auto;
   width: 100%;
   background-color: var(--azul-b);
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  position: relative;
+  padding: 0 30px;
   margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
 }
 
 .Titulo {
@@ -16,12 +25,13 @@
   color: white;
   font-size: 35px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .logo {
   height: 64px;
   width: 64px;
-  margin-right: 10px;
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -29,15 +39,25 @@
   transform: scale(1.05);
 }
 
-.Create {
-  height: 50px;
-  width: 50px;
+.createLink {
   position: absolute;
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Create {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
   transition: transform 0.2s ease-in;
 }
+
 .Create:hover {
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
 }
+
