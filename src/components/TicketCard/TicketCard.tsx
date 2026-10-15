@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Styles from "./TicketCard.module.css";
 import type { Priority, Ticket } from "../../models/Ticket";
 
@@ -34,10 +33,6 @@ function TicketCard({ ticket }: TicketCardProps) {
             style={{ backgroundColor: priorityColor[ticket.priority] }}
           />
         </div>
-
-        <Link to={`/chamados/${ticket.id}`} className={Styles.Detalhes}>
-          Ver detalhes
-        </Link>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ function NewTicket() {
     title: "",
     description: "",
     category: "",
-    priority: "",
+    Prioridades: "",
     status: "Aberto",
   });
 

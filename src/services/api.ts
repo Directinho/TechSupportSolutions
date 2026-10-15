@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Ticket, TicketFormData, Status } from "../models/Ticket";
 
 const api = axios.create({
-  baseURL: "https://techsupportsolutions.onrender.com",
+  baseURL: "",
   headers: {
     "Content-Type": "application/json",
   },
